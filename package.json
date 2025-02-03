@@ -4,7 +4,7 @@
   "main": "app.js",
   "scripts": {
     "dev":"nodemon server/app.js",
-    "build":"npm install --legacy-peer-deps --prefix client && npm install && npm install --prefix client && npm run build --prefix client",
+    "build":"npm install --legacy-peer-deps && npm install && npm install --prefix client && npm run build --prefix client",
     "start":"nodemon server/app.js"
   },
   "keywords": [],
