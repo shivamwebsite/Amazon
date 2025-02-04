@@ -28,10 +28,10 @@ const _dirname=path.resolve();
 //     app.use(express.static("client/build"))
 // }
 
-// app.use(express.static(path.join(_dirname,"/client/build")));
-// app.get('*',(req,res)=>{
-//     res.sendFile(path.resolve(_dirname,"client","build","index.html"));
-// });
+app.use(express.static(path.join(_dirname,"/client/build")));
+app.get('*',(req,res)=>{
+    res.sendFile(path.resolve(_dirname,"client","build","index.html"));
+});
 
 app.listen(port,()=>{
     console.log(`server is running on port number ${port}`);
