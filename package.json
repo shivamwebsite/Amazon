@@ -4,7 +4,7 @@
   "main": "app.js",
   "scripts": {
     "dev":"nodemon server/app.js",
-    "build":"npm install",
+    "build":"npm install&& npm install --prefix client ",
     "start":"nodemon server/app.js"
   },
   "keywords": [],
